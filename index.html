@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomHari | Chandrapur Crop Aggregator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <i class="fas fa-tractor"></i> HomHari
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#crops">Crops</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="login-btn-nav" id="loginBtnNav">Login</a></li>
+            </ul>
+            <div class="language-selector">
+                <div class="current-language" id="currentLanguage">
+                    <img src="https://placehold.co/20x20/CCCCCC/000000?text=EN" alt="English Flag">
+                    <span>EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="languages-dropdown" id="languagesDropdown">
+                    <div class="language-option" data-lang="en">
+                        <img src="https://placehold.co/20x20/CCCCCC/000000?text=EN" alt="English Flag">
+                        <span>English</span>
+                    </div>
+                    <div class="language-option" data-lang="ne">
+                        <img src="https://placehold.co/20x20/E03C31/FFFFFF?text=NE" alt="Nepali Flag"> <span>Nepali</span>
+                    </div>
+                    <div class="language-option" data-lang="hi">
+                        <img src="https://placehold.co/20x20/FF9933/FFFFFF?text=HI" alt="Hindi Flag"> <span>Hindi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Empowering Farmers, Nourishing Nepal.</h1>
+            <p>HomHari bridges the gap between Chandrapur's dedicated farmers and Nepal's thriving industries. We buy local, supply national.</p>
+            <div class="hero-btns">
+                <a href="#dashboard" class="btn btn-primary">View Current Prices</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section animated-section">
+        <div class="section-title">
+            <h2>How We Serve You</h2>
+            <p>Streamlining agriculture from farm to factory with dedication and transparency.</p>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Fair Direct Purchasing</h3>
+                <p>Transparent pricing and direct procurement from farmers, ensuring you get the best value for your hard work.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Efficient Logistics</h3>
+                <p>Hassle-free crop collection and transportation from your farm to our state-of-the-art collection centers.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <h3>Broad Industrial Network</h3>
+                <p>Connecting your produce with major industrial buyers in Hetauda, Naranghat, and Biratnagar.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3>Prompt Payments</h3>
+                <p>Receive secure and timely payments, typically within 48 hours, through your preferred method.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="crops" class="section crops-section animated-section">
+        <div class="section-title">
+            <h2>Crops We Aggregate</h2>
+            <p>Focusing on quality and high-demand agricultural products from the Chandrapur region.</p>
+        </div>
+        <div class="crop-gallery">
+            <div class="crop-card">
+                <div class="crop-image">
+                    <img src="https://source.unsplash.com/400x300/?corn,maize,field,nepal" alt="Maize (Corn) growing in a field"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/A7C957/FFFFFF?text=Maize+Field';">
+                </div>
+                <div class="crop-info">
+                    <h3>Maize (Corn)</h3>
+                    <p>Versatile corn for animal feed and diverse industrial applications.</p>
+                    <div class="price">Guide Price: NPR 23-26/kg</div>
+                    <span class="season">Peak: Jun-Aug</span>
+                </div>
+            </div>
+            <div class="crop-card">
+                <div class="crop-image">
+                    <img src="https://source.unsplash.com/400x300/?paddy,rice,field,nepal" alt="Rice paddy field"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/A7C957/FFFFFF?text=Rice+Paddy';">
+                </div>
+                <div class="crop-info">
+                    <h3>Rice (Paddy)</h3>
+                    <p>Premium paddy rice varieties sought after by leading food processors.</p>
+                    <div class="price">Guide Price: NPR 27-33/kg</div>
+                    <span class="season">Peak: Oct-Nov</span>
+                </div>
+            </div>
+            <div class="crop-card">
+                <div class="crop-image">
+                    <img src="https://source.unsplash.com/400x300/?wheat,field,nepal" alt="Wheat field ready for harvest"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/A7C957/FFFFFF?text=Wheat+Field';">
+                </div>
+                <div class="crop-info">
+                    <h3>Wheat</h3>
+                    <p>High-quality wheat, perfect for flour mills and wholesome food production.</p>
+                    <div class="price">Guide Price: NPR 29-32/kg</div>
+                    <span class="season">Peak: Mar-Apr</span>
+                </div>
+            </div>
+            <div class="crop-card">
+                <div class="crop-image">
+                    <img src="https://source.unsplash.com/400x300/?lentils,pulses,nepal,farm" alt="Bowl of various lentils"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/A7C957/FFFFFF?text=Lentils';">
+                </div>
+                <div class="crop-info">
+                    <h3>Lentils & Pulses</h3>
+                    <p>Nutritious lentils and pulses, supporting healthy diets and food industries.</p>
+                    <div class="price">Market Dependent</div>
+                    <span class="season">Peak: Nov-Feb</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section animated-section">
+        <div class="section-title">
+            <h2>Our Story & Reach</h2>
+            <p>Founded in 2018, HomHari is committed to agricultural excellence and farmer prosperity in Nepal.</p>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://source.unsplash.com/600x450/?nepal,agriculture,market,community" alt="HomHari team working with local farmers in Nepal"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x450/386641/FFFFFF?text=HomHari+Community';">
+            </div>
+            <div class="about-content">
+                <h2>Pioneering Agricultural Value Chains</h2>
+                <p>HomHari, rooted in Chandrapur, Rautahat, is a premier crop aggregator. We are passionately dedicated to uplifting local farmers by providing a reliable bridge to Nepal's dynamic industrial sector.</p>
+                <p>Our mission is to cultivate sustainable and transparent agricultural value chains. We strive to empower producers with fair prices and consistent demand, while supplying industries with quality raw materials, thereby bolstering Nepal's food security and economic prosperity.</p>
+                <h3>Our Operational Network</h3>
+                <ul class="location-list">
+                    <li><i class="fas fa-map-pin"></i> <strong>Hub:</strong> Chandrapur, Rautahat</li>
+                    <li><i class="fas fa-industry"></i> <strong>Partners:</strong> Hetauda Industrial Area</li>
+                    <li><i class="fas fa-industry"></i> <strong>Partners:</strong> Naranghat Food Processors</li>
+                    <li><i class="fas fa-industry"></i> <strong>Partners:</strong> Biratnagar Manufacturing Units</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard" class="section dashboard-section animated-section">
+        <div class="section-title">
+            <h2>Farmer's Dashboard</h2>
+            <p>Your one-stop resource for prices, trends, and selling your valuable crops.</p>
+        </div>
+
+        <div class="weather-widget">
+            <div class="weather-header">
+                <h3><i class="fas fa-map-marker-alt"></i> Weather in Chandrapur</h3>
+                <div class="weather-date" id="weatherDate">May 19, 2025</div> </div>
+            <div class="weather-body">
+                <div class="weather-main">
+                    <i class="fas fa-cloud-sun weather-icon-main" id="weatherIconMain"></i> <div class="weather-temp-main"><span id="weatherTemp">29</span>°C</div> <div id="weatherDesc">Partly Cloudy</div> </div>
+                <div class="weather-details">
+                    <div><i class="fas fa-wind"></i> Wind: <span id="weatherWind">6</span> km/h</div>
+                    <div><i class="fas fa-tint"></i> Humidity: <span id="weatherHumidity">72</span>%</div>
+                    <div><i class="fas fa-cloud-rain"></i> Precipitation: <span id="weatherPrecip">40</span>%</div>
+                    <div><i class="fas fa-thermometer-three-quarters"></i> Hi/Lo: <span id="weatherHiLo">32°/24°</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-container">
+            <div class="dashboard-tabs">
+                <div class="tab active" data-tab="prices">Current Prices</div>
+                <div class="tab" data-tab="trends">Price Trends</div>
+                <div class="tab" data-tab="sell">Sell Your Crops</div>
+            </div>
+
+            <div class="tab-content active" id="prices-content">
+                <h3>Today's Purchasing Prices</h3>
+                <p class="update-info">Last updated: <span id="priceUpdateDate">May 19, 2025 - 10:00 AM</span></p> <div class="table-responsive">
+                    <table class="prices-table">
+                        <thead>
+                            <tr>
+                                <th>Crop</th>
+                                <th>Variety</th>
+                                <th>Quality Grade</th>
+                                <th>Price per KG (NPR)</th>
+                                <th>Trend</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maize</td>
+                                <td>Yellow Hybrid</td>
+                                <td>Premium</td>
+                                <td>25.50</td>
+                                <td class="price-trend up"><i class="fas fa-arrow-up"></i> 0.50</td>
+                            </tr>
+                            <tr>
+                                <td>Maize</td>
+                                <td>Local Yellow</td>
+                                <td>Standard</td>
+                                <td>23.00</td>
+                                <td class="price-trend up"><i class="fas fa-arrow-up"></i> 0.25</td>
+                            </tr>
+                            <tr>
+                                <td>Rice</td>
+                                <td>Basmati</td>
+                                <td>Premium</td>
+                                <td>32.75</td>
+                                <td class="price-trend up"><i class="fas fa-arrow-up"></i> 1.25</td>
+                            </tr>
+                            <tr>
+                                <td>Rice</td>
+                                <td>Mansuli</td>
+                                <td>Standard</td>
+                                <td>28.50</td>
+                                <td class="price-trend up"><i class="fas fa-arrow-up"></i> 0.75</td>
+                            </tr>
+                            <tr>
+                                <td>Wheat</td>
+                                <td>HD-2967</td>
+                                <td>Premium</td>
+                                <td>31.25</td>
+                                <td class="price-trend down"><i class="fas fa-arrow-down"></i> 0.50</td>
+                            </tr>
+                            <tr>
+                                <td>Wheat</td>
+                                <td>Annapurna-1</td>
+                                <td>Standard</td>
+                                <td>29.00</td>
+                                <td class="price-trend up"><i class="fas fa-arrow-up"></i> 0.25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-content" id="trends-content">
+                <h3>Price Trends (Last 30 Days)</h3>
+                <div class="chart-container">
+                    <canvas id="priceChart"></canvas> </div>
+                <div class="market-insights">
+                    <h4>Market Insights</h4>
+                    <ul>
+                        <li>Maize prices show a steady increase due to higher demand from the poultry feed industry.</li>
+                        <li>Rice prices are rising post-harvest as inventory tightens.</li>
+                        <li>Wheat prices are stabilizing after the recent harvest completion in southern districts.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-content" id="sell-content">
+                <h3>Ready to Sell Your Harvest?</h3>
+                <p>Fill out the form below, and our team will contact you to arrange pickup or delivery.</p>
+                <form id="sellForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="farmer-name">Full Name</label>
+                            <input type="text" id="farmer-name" class="form-control" placeholder="e.g., Sita Kumari Rai" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="farmer-phone">Phone Number</label>
+                            <input type="tel" id="farmer-phone" class="form-control" placeholder="e.g., 98XXXXXXXX" required pattern="[9][6-8][0-9]{8}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="farmer-address">Farm Address / Location</label>
+                        <input type="text" id="farmer-address" class="form-control" placeholder="Village, Ward, Municipality" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="crop-type">Crop Type</label>
+                            <select id="crop-type" class="form-control" required>
+                                <option value="">-- Select Crop --</option>
+                                <option value="maize">Maize (Corn)</option>
+                                <option value="rice">Rice (Paddy)</option>
+                                <option value="wheat">Wheat</option>
+                                <option value="lentils">Lentils & Pulses</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="crop-variety">Crop Variety (if known)</label>
+                            <input type="text" id="crop-variety" class="form-control" placeholder="e.g., Yellow Hybrid, Basmati">
+                            </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="crop-quantity">Estimated Quantity (kg)</label>
+                            <input type="number" id="crop-quantity" class="form-control" placeholder="e.g., 500" required min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="harvest-date">Expected Harvest Date</label>
+                            <input type="date" id="harvest-date" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Message (optional)</label>
+                        <textarea id="message" class="form-control" rows="3" placeholder="Any specific details or questions?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit-form">Submit Inquiry</button>
+                </form>
+                 <div id="form-submission-message" class="form-submission-message" style="display:none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section animated-section">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>We're here to help. Contact us for any inquiries, support, or partnership opportunities.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Reach out to us through any of the channels below, or visit our main office in Chandrapur.</p>
+                <ul class="contact-details">
+                    <li><i class="fas fa-map-marker-alt"></i><span>HomHari Main Office<br>Chandrapur-4, Rautahat, Nepal</span></li>
+                    <li><i class="fas fa-phone"></i><span>+977-55-123456 / +977-9812345678</span></li> <li><i class="fas fa-envelope"></i><span>info@homhari.com.np</span></li>
+                    <li><i class="fas fa-clock"></i><span>Sun - Fri: 9:00 AM - 5:00 PM</span></li>
+                </ul>
+                <div class="contact-socials">
+                    <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contact-name">Full Name</label>
+                        <input type="text" id="contact-name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Your Message</label>
+                        <textarea id="contact-message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                     <div id="contact-form-submission-message" class="form-submission-message" style="display:none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 class="logo-footer"><i class="fas fa-tractor"></i> HomHari</h3>
+                <p>Connecting Chandrapur's farmers to Nepal's industries. Committed to fair trade and agricultural growth since 2018.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#crops">Crops We Buy</a></li>
+                    <li><a href="#dashboard">Farmer Dashboard</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li> <li><a href="#">Terms of Service</a></li> </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <address>
+                    Chandrapur-4, Rautahat<br>
+                    Madhesh Province, Nepal<br>
+                    <i class="fas fa-phone-alt"></i> +977-55-123456<br>
+                    <i class="fas fa-envelope"></i> info@homhari.com.np
+                </address>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                 <h3>Newsletter</h3>
+                 <p>Stay updated with our latest prices, news, and agricultural tips.</p>
+                 <form id="newsletterForm" class="newsletter-form">
+                     <input type="email" name="email" placeholder="Enter your email" required>
+                     <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                 </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear">2025</span> HomHari Agricultural Services. All Rights Reserved. Designed with <i class="fas fa-heart" style="color: var(--danger-color);"></i> by an AI Assistant.</p>
+        </div>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="login-form">
+                <h3>Farmer/Partner Login</h3>
+                <form id="actualLoginForm">
+                    <div class="form-group">
+                        <label for="username">Username or Email</label>
+                        <input type="text" id="username" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <div class="login-options">
+                        <a href="#">Forgot Password?</a>
+                        <a href="#">Create Account</a>
+                    </div>
+                </form>
+                <p class="register-link">New to HomHari? <a href="#">Register Here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
